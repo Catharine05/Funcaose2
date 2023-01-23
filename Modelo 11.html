@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Empresa e Prêmio</h1>
+<p>Nome1:<span id="nome1"></span></p>
+<p>TotalVendas1:<span id="venda1"></span></p>
+<p>Nome2:<span id="nome2"></span></p>
+<p>TotalVendas2:<span id="venda2"></span></p>
+
+<p>Ganhou:<span id="ganhou"></span></p>
+<p>Nao Ganhou:<span id="perdeu"></span></p>
+
+<script>
+
+    let nome1 = prompt("Digite o primeiro nome");
+    let venda1 = Number(prompt("Dgite o total da venda1"));
+    let nome2 = prompt("Dgite o segundo nome");
+    let venda2 = Number(prompt("Digite o total da venda2"));
+
+    if (venda1 >= 2000 && venda1 > venda2){
+        ganhou = nome1
+        perdeu = nome2
+    }
+
+    else if (venda2 >= 2000 && venda2 > venda1){
+        ganhou = nome2
+        perdeu = nome1
+    }
+
+    else {
+        ganhou = "ninguem ganhou"
+    }
+
+    document.getElementById("nome1").innerHTML = nome1;
+    document.getElementById("venda1").innerHTML = venda1;
+    document.getElementById("nome2").innerHTML = nome2;
+    document.getElementById("venda2").innerHTML = venda2;
+    document.getElementById("ganhou").innerHTML = ganhou;
+    document.getElementById("perdeu").innerHTML = perdeu;
+    
+    </script>
+
+</body>
+</html>

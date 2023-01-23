@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Números Par e Impar</h1>
+    <p>Numero:<span id="numero_digitado"></p>    
+    
+
+    <script>
+    
+    let numero = Number(prompt("Digite um número"));
+    
+    let parimpar = (numero %2 );
+       
+    if (parimpar == 0){
+         numero_digitado = "par"
+    }
+     
+    else{numero_digitado = "impar"}
+
+    document.getElementById("numero_digitado").innerHTML = numero_digitado;
+    
+    </script>
+</body>
+</html>

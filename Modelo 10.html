@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Diferenças</h1>
+    <p>Número1:<span id="numero_digitado1"></span></p>
+    <p>Número2:<span id="numero_digitado2"></span></p>
+    <p>Diferença:<span id="diferenca"></span></p>
+
+    <script>
+
+        let numero1 = Number(prompt("Digite o primeiro numero"));
+        let numero2 = Number(prompt("Digite o segundo numero"));
+
+
+        if (numero1 > numero2){
+           diferenca = (numero1 - numero2) 
+        }
+
+        else {diferenca = (numero2 - numero1)
+        }
+
+        document.getElementById("numero_digitado1").innerHTML = numero1;
+        document.getElementById("numero_digitado2").innerHTML = numero2;
+        document.getElementById("diferenca").innerHTML = diferenca;
+
+             
+    </script>
+</body>
+</html>
